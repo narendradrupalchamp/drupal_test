@@ -1,0 +1,11 @@
+book_manager.add_book_form:
+  title: 'Add Book Content'
+  description: 'Add a new book'
+  parent: system.admin_content
+  route_name: book_manager.add_book_form
+
+book_manager.list_books:
+  title: 'List Books'
+  description: 'List all books'
+  parent: system.admin_content
+  route_name: book_manager.list_books

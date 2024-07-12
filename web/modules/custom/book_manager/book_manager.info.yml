@@ -1,0 +1,5 @@
+name: 'Book Manager'
+type: module
+description: 'Provides CRUD functionality for managing books.'
+core_version_requirement: ^10
+package: Custom

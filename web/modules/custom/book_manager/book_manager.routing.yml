@@ -1,0 +1,31 @@
+book_manager.add_book_form:
+  path: '/admin/book/add'
+  defaults:
+    _form: '\Drupal\book_manager\Form\BookForm'
+    _title: 'Add Book'
+  requirements:
+    _permission: 'create book content'
+
+book_manager.list_books:
+  path: '/admin/books'
+  defaults:
+    _controller: '\Drupal\book_manager\Controller\BookController::listBooks'
+    _title: 'Books List'
+  requirements:
+    _permission: 'access content'
+
+book_manager.edit_book_form:
+  path: '/admin/book/{node}/edit'
+  defaults:
+    _form: '\Drupal\book_manager\Form\BookEditForm'
+    _title: 'Update Book'
+  requirements:
+    _permission: 'edit any book content'
+
+book_manager.delete_book_modal:
+  path: '/admin/book/{node}/delete'
+  defaults:
+    _controller: '\Drupal\book_manager\Controller\BookController::deleteBookModal'
+    _title: 'Delete Book'
+  requirements:
+    _permission: 'delete any book content'

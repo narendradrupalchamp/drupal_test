@@ -1,0 +1,8 @@
+create book content:
+  title: 'Create new books'
+
+edit any book content:
+  title: 'Edit any book'
+
+delete any book content:
+  title: 'Delete any book'
